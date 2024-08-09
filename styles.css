@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "NorseBold";
+    src: url("font/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+}
+
+.background {
+    position: absolute;
+    background-image: url("https://media.istockphoto.com/id/1410766826/photo/full-frame-of-green-leaves-pattern-background.jpg?s=612x612&w=0&k=20&c=FO6gKmD7CE5DZ4KRD9QuQDgJMhPjAvxr5Li17sr3Q-E=");
+    background-size: cover;
+    height: 100%;
+    min-width: 500px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .background .logo {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        top: -140px;
+        aspect-ratio: 4 / 1;
+        color: white;
+        font-family: "NorseBold", sans-serif;
+    }
+
+        .background .logo img {
+            width: 4rem;
+        }
+
+.content {
+    position: absolute;
+    right: 4rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.lets {
+    position: absolute;
+    font-family: "Helvetica", "Arial", sans-serif;
+    top: 140px;
+    left: 560px;
+}
+
+#form, #form2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    position: absolute;
+    width: 300px;
+    height: auto; 
+}
+
+#form {
+    left: 550px;
+    top: 240px;
+}
+
+#form2 {
+    right: 120px;
+    top: 240px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #4cae4c;
+    }
+
+#actions button {
+    position: absolute;
+    top: 520px;
+    left: 550px;
+    width: 10%;
+}
+
+
+    #actions p {
+        position:absolute;
+        font-family: "Helvetica", "Arial", sans-serif;
+        color: black;
+        font-weight: bold;
+        top: 600px;
+        left: 550px;
+    }
+
+#actions p a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+#actions p a:hover {
+    text-decoration: underline;
+}
+
